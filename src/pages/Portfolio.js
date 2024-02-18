@@ -1,15 +1,17 @@
 import React, { useContext } from "react";
 
-import Image1 from "../img/portfolio/1.png";
-import Image2 from "../img/portfolio/2.png";
-import Image3 from "../img/portfolio/3.png";
-import Image4 from "../img/portfolio/4.png";
+import Monkey from "../img/portfolio/monkey.png";
+import Bird from "../img/portfolio/bird.png";
+import Eagle from "../img/portfolio/eagle.png";
+import Dog from "../img/portfolio/dog.png";
 
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import { transition1 } from "../transitions";
 import { CursorContext } from "../context/CursorContext";
+
+import "./portfolio.css";
 
 const Portfolio = () => {
   const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);
@@ -68,7 +70,7 @@ const Portfolio = () => {
               <img
                 className="object-cover h-full lg:h-[220px]
               hover:scale-110 transition-all duration-500"
-                src={Image1}
+                src={Dog}
                 alt=""
               ></img>
             </div>
@@ -79,7 +81,7 @@ const Portfolio = () => {
               <img
                 className="object-cover h-full lg:h-[220px]
               hover:scale-110 transition-all duration-500"
-                src={Image2}
+                src={Eagle}
                 alt=""
               ></img>
             </div>
@@ -90,7 +92,7 @@ const Portfolio = () => {
               <img
                 className="object-cover h-full lg:h-[220px]
               hover:scale-110 transition-all duration-500"
-                src={Image3}
+                src={Bird}
                 alt=""
               ></img>
             </div>
@@ -101,11 +103,35 @@ const Portfolio = () => {
               <img
                 className="object-cover h-full lg:h-[220px]
               hover:scale-110 transition-all duration-500"
-                src={Image4}
+                src={Monkey}
                 alt=""
               ></img>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div class="container pb-8">
+        <h1 className="h1 mb-10">Mes dernières photos</h1>
+        <div class="gallery">
+          <figure class="gallery__item gallery__item--1">
+            <img src={Bird} alt="Gallery image 1" class="gallery__img" />
+          </figure>
+          <figure class="gallery__item gallery__item--2">
+            <img src={Monkey} alt="Gallery image 2" class="gallery__img" />
+          </figure>
+          <figure class="gallery__item gallery__item--3">
+            <img src={Eagle} alt="Gallery image 3" class="gallery__img" />
+          </figure>
+          <figure class="gallery__item gallery__item--4">
+            <img src={Dog} alt="Gallery image 4" class="gallery__img" />
+          </figure>
+          <figure class="gallery__item gallery__item--5">
+            <img src={Bird} alt="Gallery image 5" class="gallery__img" />
+          </figure>
+          <figure class="gallery__item gallery__item--6">
+            <img src={Monkey} alt="Gallery image 6" class="gallery__img" />
+          </figure>
         </div>
       </div>
     </motion.section>

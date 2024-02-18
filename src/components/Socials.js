@@ -18,7 +18,7 @@ const Socials = () => {
     >
       <ul className="flex gap-x-4">
         <li>
-          <a href="http://www.instagram.com" target="_blank">
+          <a href="https://www.instagram.com/dorian_photographie/" target="_blank">
             <ImInstagram />
           </a>
         </li>

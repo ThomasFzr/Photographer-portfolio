@@ -35,8 +35,8 @@ const Contact = () => {
             onMouseLeave={mouseLeaveHandler}
             className="lg:flex-1 lg:pt-32 px-4"
           >
-            <h1 className="h1">Contact me</h1>
-            <p className="mb-12">I would love to get suggestions from you.</p>
+            <h1 className="h1">Me contacter</h1>
+            <p className="mb-12">Si vous voulez travailler avec moi.</p>
             <form className="flex flex-col gap-y-4">
               <div className="flex gap-x-10">
                 <input
@@ -44,14 +44,14 @@ const Contact = () => {
               border-b-primary h-[60px] bg-transparent
               font-secondary w-full pl-3 placeholder:text-[#757879]"
                   type="text"
-                  placeholder="Your name"
+                  placeholder="Votre nom"
                 ></input>
                 <input
                   className="outline-none border-b
               border-b-primary h-[60px] bg-transparent
               font-secondary w-full pl-3 placeholder:text-[#757879]"
                   type="email"
-                  placeholder="Your email address"
+                  placeholder="Votre adresse mail"
                 ></input>
               </div>
               <input
@@ -59,13 +59,13 @@ const Contact = () => {
               border-b-primary h-[60px] bg-transparent
               font-secondary w-full pl-3 placeholder:text-[#757879]"
                 type="text"
-                placeholder="Your message"
+                placeholder="Votre message"
               ></input>
               <button
                 className="btn mb-[30px] mx-auto
                 lg:mx-0 self-start"
               >
-                Send it
+                Envoyer
               </button>
             </form>
           </div>

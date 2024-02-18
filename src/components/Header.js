@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 
 import Socials from "./Socials";
-import Logo from "../img/header/logo.svg";
+import Logo from "../img/header/logoDorian.png";
 import MobileNav from "./MobileNav";
 
 import { Link } from "react-router-dom";
@@ -33,13 +33,13 @@ const Header = () => {
             to={"/"}
             className="text-[#696c6d} hover:text-primary transition"
           >
-            Home
+            Accueil
           </Link>
           <Link
             to={"/about"}
             className="text-[#696c6d} hover:text-primary transition"
           >
-            About
+            À propos de moi
           </Link>
           <Link
             to={"/portfolio"}
