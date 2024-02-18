@@ -63,3 +63,9 @@
   grid-row-start: 6;
   grid-row-end: 9;
 }
+
+@media (max-width: 768px) {
+  .gallery__img {
+    height: auto; /* Adjust the height to maintain proportions */
+  }
+}

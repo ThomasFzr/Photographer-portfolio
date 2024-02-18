@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 
 import WomanImg from "../img/contact/woman.png";
 import { motion } from "framer-motion";
@@ -8,6 +8,26 @@ import { CursorContext } from "../context/CursorContext";
 
 const Contact = () => {
   const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "";
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      document.body.style.overflow = "";
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+  
   return (
     <motion.section
       initial={{ opacity: 0, y: "100%" }}
@@ -83,6 +103,7 @@ const Contact = () => {
         </div>
       </div>
     </motion.section>
+    
   );
 };
 

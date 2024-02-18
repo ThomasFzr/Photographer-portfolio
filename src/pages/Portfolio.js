@@ -55,7 +55,7 @@ const Portfolio = () => {
               className="btn mb-[30px]
             mx-auto lg:mx-0"
             >
-              Hire me
+              Me contacter
             </Link>
           </motion.div>
           <div

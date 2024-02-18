@@ -83,7 +83,7 @@ const MobileNav = () => {
           </li>
           <li>
             <Link onClick={closeMenu} to="/about">
-              A propos de moi
+              À propos de moi
             </Link>
           </li>
           <li>
